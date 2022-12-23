@@ -33,11 +33,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'faraday'
 
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
-
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 gem 'activerecord-import'
 gem 'ajax-datatables-rails'
 gem 'bootstrap', '~> 4.0.0'
@@ -82,3 +78,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem "activestorage", ">= 5.2.6.3"
