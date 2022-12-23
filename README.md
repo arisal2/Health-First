@@ -7,9 +7,9 @@
 
 - Live Covid-19 dashboard
 - Live vaccination records
-- World map and variuos reports
-- Diagnosis checker based on symptoms.
-- Load and save potential user list
+- World map and various reports
+- Diagnosis checker based on symptoms
+- Load and save potential user list and send emails
 
 ## Tech
 
@@ -31,12 +31,9 @@ You must have Docker & Docker Compose installed.
 
 ## Environment File
 
-This application depends on .env.dev file
-An example environment file is also included. Please read the message inside the file, which contains API information and credentials, and genrate it first, so that it loads properly when you setup docker.
+This application depends on `.env.dev` file. An example of the environment file (`env_example.txt`) is also included. Please read the message inside the file which contains API information and credentials, and generate it first so that it loads properly when you setup docker.
 
-```
-touch env.dev
-```
+Create an `.env.dev` file in the root directory and copy all the requried fields from `env_example.txt`
 
 ## Docker
 
@@ -47,7 +44,6 @@ After cloning the repository, run the command:
 ```
 
 This will build the docker containers, setup the database, and start the container.
-
 Also, you can use individual commands if you wish:
 
 ```
@@ -66,10 +62,10 @@ docker-compose up
 Command to stop the container:
 
 ```
-docker-compose up
+docker-compose stop
 ```
 
-Command to remove the container only:
+Command to remove the container:
 
 ```
 docker-compose down
@@ -100,8 +96,9 @@ You can find the default user credentials inside the `db/seeds.rb` file
 - Sidekiq UI - <http://localhost:3000/sidekiq>
 - Sidekiq Cron UI - <http://localhost:3000/sidekiq/cron>
 - This application includes a feature to upload an email list, example provided with repo (email_list.csv).
-- After logging into the system visit  `http://localhost:3000/potential_users` and upload the CSV file.
+- After logging into the system, visit  `http://localhost:3000/potential_users` and upload the CSV file.
 - The Sidekiq is responsible for running a job that will send email to the list provided via the CSV file. All logs for the email valid and invalid will be logged in `email.log` inside the log folder.
+- If you are using your gmail account, you will have to enable less secure apps for sending an email.
 
 ## API and References
 
@@ -109,3 +106,7 @@ You can find the default user credentials inside the `db/seeds.rb` file
 - [OWID](https://ourworldindata.org)
 - [Corona API](https://corona-api.com)
 - [API Medic](https://apimedic.com)
+
+## Other
+
+- Please find the login module architecture in the login_module_diagrams folder

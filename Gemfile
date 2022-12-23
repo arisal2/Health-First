@@ -12,7 +12,7 @@ gem 'rails', '~> 5.2.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -36,7 +36,7 @@ gem 'faraday'
 # Use Capistrano for deployment
 gem 'activerecord-import'
 gem 'ajax-datatables-rails'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'chartkick'
 gem 'font-awesome-rails'
 gem 'jquery-datatables'
