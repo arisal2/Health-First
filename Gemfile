@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.5'
 
 # Shim to load environment variables from .env into ENV in development.
 gem 'dotenv-rails', require: 'dotenv/rails-now', groups: %i[development test]
