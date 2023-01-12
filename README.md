@@ -1,6 +1,6 @@
 # Fluffy Octo System
 
-[[![CodeFactor](https://www.codefactor.io/repository/github/arisal2/fluffy-octo-system/badge)](https://www.codefactor.io/repository/github/arisal2/fluffy-octo-system)](https://www.codefactor.io/Content/badges/A.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/arisal2/dashboard-for-covid-and-medical-diagnosis/badge)](https://www.codefactor.io/repository/github/arisal2/dashboard-for-covid-and-medical-diagnosis)
 [![Fluffy-Octo-System](https://github.com/arisal2/fluffy-octo-system/actions/workflows/fluffy_octo_system.yml/badge.svg)](https://github.com/arisal2/fluffy-octo-system/actions/workflows/fluffy_octo_system.yml)
 
 ## Features
